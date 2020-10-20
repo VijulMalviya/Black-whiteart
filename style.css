@@ -1,0 +1,313 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    
+}
+html,body{
+    width: 100%;
+    height: 100%;
+    /* overflow: hidden !important; */
+
+}
+.bg{
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    display: flex;   
+ 
+}
+.bg .div1{
+    width: 35%;  
+    height: 100%;
+    background-color: rgb(13, 13, 13);
+    color: white;
+    padding: 50px;
+}
+.bg .div2{
+    width: 65%;
+    height: 100%;
+    background-image: url("bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: contain; 
+    
+    
+}
+
+.nav{
+    position: fixed;
+    width: 100%;
+    height: 15%;
+    font-size: 1rem;
+    font-weight: 900;
+    position: fixed;
+    color: white;
+    display: flex;
+    position: fixed;
+    
+}
+.nav1{
+    width: 35%;
+    height: 100%;
+    padding: 50px;
+    background-color: rgb(13, 13, 13);
+
+}
+.nav2{
+    width: 65%;
+    height: 100%;
+    background-color: black;
+}
+.text{
+   padding: 50px;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%,-50%);
+    width: 100%;
+    height: auto;
+    
+}
+.text h5{
+    font-size: 12px !important;
+    letter-spacing: 1rem;
+    margin-bottom: 2rem;
+}
+
+.text h2{
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.text p{
+    font-size: 0.82rem;
+    margin-top: 0.9rem;
+    letter-spacing: 1px;
+    color: rgb(153, 153, 153);
+    line-height: 1.3rem;
+    width: 30%;
+}
+.text button{
+    width: 150px;
+    height: 50px;
+    border-radius: 2px;
+    outline: none;
+    border: none;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-top: 40px;
+}
+.div1 i{
+    font-size: 18px;
+    position: absolute;
+    bottom: 8%;
+    color: rgb(224, 220, 220);
+}
+
+
+
+@media only screen and (min-width:320px) and (max-width: 480px){
+    nav{
+     flex-direction: column;
+
+    }
+    .nav1{
+        padding: 25px;
+        width: 100%;
+        background-color: black;
+    }
+    .nav2{
+       display: none;
+ }
+    .bg{
+       flex-direction: column;
+       
+    }
+     .bg .div1{
+          width: 100%;
+          height: 30%;
+          background-color: black;
+    }  
+     .bg .div2{
+         height: 70%;
+         background-position: center;
+         width: 100%;
+    }
+    .text{
+        padding: 25px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%,-60%);
+    }
+    .text h5{
+        font-size: 10px !important;
+        margin-bottom: 1.5rem;
+    }
+    .text h2{
+        font-size: 1.7rem;
+        margin-top: 5px;
+    }
+    .text p{
+        font-size: 0.62rem;
+        color: rgb(255, 255, 255);
+        line-height: 0.8rem;
+        width: 100%;
+    }
+    .text button{
+        width: 100px;
+        height: 40px;
+        border-radius: 2px;
+        font-weight: bold;
+        font-size: 0.7rem;
+        margin-top: 20px;
+    }
+    .div1 i{
+        font-size: 18px;
+        position: absolute;
+        bottom: 8%;
+        color: rgb(224, 220, 220);
+    }
+}
+
+@media only screen and (min-width:481px) and (max-width: 767px){
+    nav{
+     flex-direction: column;
+
+    }
+    .nav1{
+        padding: 25px;
+        width: 100%;
+        background-color: black;
+    
+    }
+    .nav1 h2{
+        font-size: 1rem;
+    }
+    .nav2{
+       display: none;
+ }
+    .bg{
+       flex-direction: column;
+    }
+     .bg .div1{
+          width: 100%;
+          height: 50%;
+          background-color: black;
+    }  
+     .bg .div2{
+         height: 50%;
+         background-position: center;
+         width: 100%;
+    }
+    .text{
+        padding: 25px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+    }
+    .text h5{
+        font-size: 8px !important;
+        letter-spacing: 0.7rem;
+        margin-bottom: 1.0rem;
+    }
+    .text h2{
+        font-size: 1.4rem;
+        margin-top: 5px;
+    }
+    .text p{
+        font-size: 0.52rem;
+        color: rgb(255, 255, 255);
+        line-height: 0.8rem;
+        width: 40%;
+    }
+    .text button{
+        width: 90px;
+        height: 30px;
+        border-radius: 2px;
+        font-weight: bold;
+        font-size: 0.6rem;
+        margin-top: 20px;
+    }
+    .div1 i{
+        
+        font-size: 12px;
+        position: absolute;
+        bottom: 8%;
+        color: rgb(224, 220, 220);
+    }
+}
+
+@media only screen and (min-width:768px) and (max-width: 1024px){
+    nav{
+     flex-direction: column;
+
+    }
+    .nav1{
+        padding: 40px;
+        width: 100%;
+        background-color: black;
+    
+    }
+    .nav1 h2{
+        font-size: 1.5rem;
+    }
+    .nav2{
+       display: none;
+ }
+    .bg{
+       flex-direction: column;
+    }
+     .bg .div1{
+          width: 100%;
+          height: 10%;
+          background-color: black;
+    }  
+     .bg .div2{
+         height: 90%;
+         background-position: center;
+         width: 100%;
+    }
+    .text{
+        padding: 40px;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%,-65%);
+    }
+    .text h5{
+        font-size: 14px !important;
+        letter-spacing: 0.7rem;
+        margin-bottom: 1.0rem;
+    }
+    .text h2{
+        font-size: 2rem;
+        margin-top: 5px;
+    }
+    .text p{
+        font-size: 0.9rem;
+        color: rgb(255, 255, 255);
+        line-height: 1.5rem;
+        width: 80%;
+    }
+    .text button{
+        width: 150px;
+        height: 50px;
+        border-radius: 2px;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-top: 20px;
+    }
+    .div1 i{
+        
+        font-size: 22px;
+        position: absolute;
+        bottom: 8%;
+        color: rgb(224, 220, 220);
+    }
+}
+
+
