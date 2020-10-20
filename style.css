@@ -46,6 +46,7 @@ html,body{
     color: white;
     display: flex;
     position: fixed;
+    animation: logo 2s infinite alternate ease-in-out;
     
 }
 .nav1{
@@ -98,13 +99,34 @@ html,body{
     font-weight: bold;
     font-size: 0.8rem;
     margin-top: 40px;
+    transition: 1s;
+    cursor: pointer;
+}
+
+.text button:hover{
+    background-color: rgb(13, 13, 13);
+    border: 1px solid white;
+    color: white;
 }
 .div1 i{
     font-size: 18px;
     position: absolute;
-    bottom: 8%;
+    bottom: 6%;
     color: rgb(224, 220, 220);
+    cursor: pointer;
+    animation: down 1s infinite alternate ease-in-out;
 }
+
+@keyframes down {
+    from {bottom: 6%;}
+    to {bottom: 8%;}
+  }
+
+  @keyframes logo {
+    from {color: #fff;}
+    to {color: rgb(0, 0, 0);}
+  }
+
 
 
 
